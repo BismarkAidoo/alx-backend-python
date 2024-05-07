@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
-"""Contains a function that converts a Python variable to a KV pair."""
-from typing import Union, Tuple
+""" Complex types - string and int/float to tuple """
+from typing import List, Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    """Converts a Python variable to a KV pair."""
-    return k, v ** 2
+    """ Type-annotated function to_kv that takes
+        strings, integers and floats arguments.
+        Args:
+            k: string type.
+            v: int or float type.
+        Return:
+            Tuple.
+    """
+    return (k, pow(v, 2))

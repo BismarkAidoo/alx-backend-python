@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Contains a function that returns a string representation of a float"""
+""" Basic annotations - to string """
 
 
 def to_str(n: float) -> str:
-    """Returns a string representation of a float
-    Args:
-        n: A float to convert to a string
-    Returns:
-        A string representation of the float
+    """ Type-annotated function to_str that takes a float argument.
+        Args:
+            n: float type.
+        Return:
+            The string representation of the float.
     """
     return str(n)
